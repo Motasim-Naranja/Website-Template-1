@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --orangeFade : #eb4e00d8;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px;
+    background-color: black;
+    color: white;
+    /* position: sticky;
+    top: 0px; */
+}
+
+/* header p{} */
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 120px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: -10px 0px 5px ;
+    /* width: 100%; */
+    /* right: 0px; */
+}
+
+nav img{
+    /* width: 90px; */
+    height: 50px;
+}
+
+nav ul{
+    display: flex ;
+    list-style: none;
+    gap: 40px;
+}
+
+
+/* section 1 */
+
+.section1{
+    overflow: hidden;
+}
+
+
+
+/* section 2 */
+
+.section2{
+    padding: 50px 130px;
+    
+}
+
+.section2 .glovesGridHome{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 250px 250px;
+    gap: 20px;
+    /* background-color: blue; */
+}
+
+
+/* card 1 */
+
+.section2 .glovesGridHome .card1{
+    background-image: url(/assets/asset\ 1.jpeg);
+    background-size: cover;
+    grid-row: 1/3;
+}
+
+/* card 2  */
+
+.section2 .glovesGridHome .card2{
+    background-image: url(/assets/asset\ 2.jpeg);
+    background-size: cover;
+
+}
+
+
+
+/* card 3 */
+
+
+.section2 .glovesGridHome .card3{
+    background-image: url(/assets/asset\ 3.jpeg);
+    background-size: cover;
+}
+
+
+/* card 4 */
+
+.section2 .glovesGridHome .card4{
+    background-image: url(/assets/asset\ 7.jpeg);
+    background-size: cover;
+}
+
+
+/* card 5 */
+
+.section2 .glovesGridHome .card5{
+    background-image: url(/assets/asset\ 5.jpeg);
+    background-size: cover;
+}
+
+
+
+/* card */
+
+.section2 .glovesGridHome .card{
+    box-shadow: 0px 10px 12px 0.1px #7c7b7b9d;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 40px;
+    align-items: center;
+
+}
+
+.section2 .glovesGridHome .card .foreground p{
+    background-color: var(--orangeFade);
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 50% ;
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+.section2 .glovesGridHome .card .foreground button{
+    display: none;
+}
+
+.section2 .glovesGridHome .card:hover .foreground{
+    background-color: rgba(255, 51, 0, 0.808);
+    width: 100%;
+    height: 100%;
+}
+/* hover  */
+
+/* .section2 .glovesGridHome .card:hover{
+    background-image: none;
+    background-color: var(--orangeFade);
+    
+    
+} */
+
+.section2 .glovesGridHome .card:hover .foreground p{
+    /* background-color: var(--orangeFade); */
+    color: white;
+    text-align: center;
+    margin-top: 20% ;
+    padding: 8px;
+    font-size: 1.2rem;
+    background-color: #00000000;
+}
+
+.section2 .glovesGridHome .card:hover .foreground button{ 
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    width: 90px;
+}
+
+.section2 .glovesGridHome .card:hover .foreground button:hover{ 
+    display: block;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
